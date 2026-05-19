@@ -18,7 +18,7 @@
 
 |**№**| **Описание** | **Метод** | **Данные/Параметры** | **Ожидаемый результат** |
 |------| ------ | ------ | ------ | ------ |
-|1| Добавление пользователя | POST | ```json {"login": "test", "full_name": "test", "ip_address": "198.51.100.42", "is_connected": false, "password": "test123", "room_id": 1}```|200 Successful response. Новый пользователь создан успешно.|
-|2| Изменение имени таймера на пустое значение | PATCH | ```json { "title": "", "seconds": 500,"is_running": true, "user_id": 9, "room_id": 2, "room_id": 1} ```|422 Validation Error. Таймер не изменен. Высвечивается ошибка валидации.|
-|3| Добавление пользователя с пустым ip-адресом | POST | ```json { "login": "user", "full_name": "user1", "ip_address": "", "is_connected": false, "password": "psw3", "room_id": 1}```|422 Validation Error. Таймер не изменен. Высвечивается ошибка валидации.|
+|1| Добавление пользователя | POST | `{"login": "test", "full_name": "test", "ip_address": "198.51.100.42", "is_connected": false, "password": "test123", "room_id": 1}`|200 Successful response. Новый пользователь создан успешно.|
+|2| Изменение имени таймера на пустое значение | PATCH | ` { "title": "", "seconds": 500,"is_running": true, "user_id": 9, "room_id": 2, "room_id": 1} `|422 Validation Error. Таймер не изменен. Высвечивается ошибка валидации.|
+|3| Добавление пользователя с пустым ip-адресом | POST | ` { "login": "user", "full_name": "user1", "ip_address": "", "is_connected": false, "password": "psw3", "room_id": 1}`|422 Validation Error. Таймер не изменен. Высвечивается ошибка валидации.|
 
